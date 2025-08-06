@@ -1,7 +1,8 @@
+@import url('https://fonts.cdnfonts.com/css/hero-new');
 body {
     margin: 0;
-    font-family: Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    font-size: 1rem;
+    font-family: 'Hero New', sans-serif;
+    font-size: .9rem;
     font-weight: 400;
     line-height: 1.5;
     color: #212529;
@@ -10,4 +11,14 @@ body {
 }
 .wrapper {
     width: 100%;
+     height: calc(100vh - 100px);
+     overflow: hidden;
+}
+header{
+   
+.navbar {
+        // box-shadow: 0 0 28px rgba(82, 63, 105, .08);
+        box-shadow: 0px 15px 10px -15px #9c9b9b; 
+        z-index: 1;
+}
 }
