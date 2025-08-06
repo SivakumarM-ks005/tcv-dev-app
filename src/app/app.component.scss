@@ -1,0 +1,126 @@
+.toggle-btn {
+  position: absolute;
+  top: 10px;
+  right: -100px;
+  z-index: 1000;
+}
+
+.sidebar {
+  min-width: 270px;
+    max-width: 270px;
+    background: #0074B7;
+    color: #fff;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    height: calc(100vh - 120px);
+}
+
+.sidebar.active {
+ min-width: 0px;
+    max-width: 0px;
+    text-align: center;
+}
+
+#sidebar.active {
+    min-width: 0px;
+    max-width: 0px;
+    text-align: center;
+}
+
+@media (max-width: 991.98px) {
+    .sidebar {
+        min-width: 0px;
+        max-width: 0px;
+        text-align: center;
+        margin-left: -80px !important;
+    }
+
+    .sidebar.active {
+        position: absolute;
+         min-width:270px;
+        max-width: 270px;
+        margin-left: 0px !important;
+    }
+}
+
+#content {
+    background: white;
+}
+
+
+.sidebar-nav {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  
+}
+
+.sidebar-nav li,
+ul li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: 100%;
+
+}
+
+.sidebar-nav .nav-item {
+    margin-bottom: 1px;
+}
+
+.sidebar-nav li.active {
+    // background: blue !important;
+    color: rgb(0, 0, 0) !important;
+}
+
+.sidebar-nav .nav-link {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    font-weight: normal;
+    color: white;
+    transition: 0.3;
+    // background: #4d76c9;
+    padding: 5px 5px 5px 10px;
+
+    // border-radius: 4px;
+    a {
+        cursor: pointer;
+        text-decoration: none;
+        color:#ccc !important;
+    }
+
+    &:hover {
+        cursor: pointer !important;
+    }
+}
+
+.sidebar-nav .nav-link.collapsed {
+    // background: #fff;
+}
+
+.sidebar-nav .nav-link i {
+    font-size: 13px;
+    margin-right: 6px;
+    color: #4154f1;
+}
+
+.sidebar-nav .nav-content {
+    li {
+        padding: 5px 0 5px 25px;
+        // background: #ccc;
+        border-bottom: 1px solid white;
+        border-top: 1px solid white;
+        border-collapse: collapse;
+
+    }
+
+    padding:0;
+    margin: 0;
+    list-style: none;
+}
+
+.sidebar-nav .nav-link:not(.collapsed) .bi-chevron-down {
+    transform: rotate(180deg);
+}
