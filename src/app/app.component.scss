@@ -1,8 +1,8 @@
 .toggle-btn {
-  position: absolute;
-  top: 10px;
-  right: -100px;
-  z-index: 1000;
+      position: absolute;
+    top: 10px;
+    right: -29px;
+    z-index: 1000;
 }
 aside {
 z-index: 0;
@@ -10,7 +10,7 @@ z-index: 0;
 .sidebar {
   min-width: 220px;
     max-width: 220px;
-    background: #0074B7;
+    background: #5695fd;
     color: #fff;
     -webkit-transition: all 0.3s;
     -o-transition: all 0.3s;
@@ -25,7 +25,9 @@ z-index: 0;
     max-width: 0px;
     text-align: center;
 }
-
+.bi-arrow-left-square::before {
+    font-size: 30px;
+}
 #sidebar.active {
     min-width: 0px;
     max-width: 0px;
@@ -62,6 +64,7 @@ z-index: 0;
     overflow-x: auto;
     height: 100%;
     padding-bottom: 20px;
+    font-family: "Poppins", sans-serif;
 }
 
 .sidebar-nav li,
