@@ -4,11 +4,11 @@ import { LoginComponent } from './login/login.component';
 export const routes: Routes = [
     {
         path:'',
-        redirectTo: 'login',
+        redirectTo: 'slick',
         pathMatch:'full'
     },
     {
         path:'login',
-        loadComponent:()=> import('./login/login.component').then(n =>n.LoginComponent)
+        loadComponent:()=> import('./slick-carosuel/slick-carosuel.component').then(n =>n.SlickCarosuelComponent)
     }
 ];
