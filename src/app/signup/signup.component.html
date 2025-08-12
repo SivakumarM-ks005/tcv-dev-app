@@ -1,0 +1,47 @@
+  <div id="login-box">
+    <div class="left-box">
+      <h1> Sign Up </h1>
+      <input type="text" name="username" placeholder="Username" [(ngModel)]="signupObj.userName"/>
+      <input type="text" name="emailid" placeholder="Email" [(ngModel)]="signupObj.emailid" required/>
+      <input type="password" name="password" placeholder="Password" [(ngModel)]="signupObj.password" required/>
+      <input type="text" name="firstName" placeholder="First Name" [(ngModel)]="signupObj.firstName"/>
+           <input type="text" name="lastName" placeholder="First Name" [(ngModel)]="signupObj.lastName"/>
+                 <button class="social facebook" (click)="onSingup()">Sign Up </button>
+    </div>
+    <div class="right-box">
+      <span class="signinwith">Sign in with Social Network </span>
+      <button class="social facebook">Log in with Facebook</button>
+      <button class="social twitter">Log in with Twitter</button>
+      <button class="social google">Log in with Google+</button>
+     <button class="social google" (click)="gotologin()">Login</button>
+    </div>
+    <div class="or">OR</div>
+  </div> 
+<div class="container"> 
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <h2 class="text-center text-dark mt-5">Login Form</h2>
+        <div class="text-center mb-5 text-dark">Made with bootstrap</div>
+        <div class="card ">
+
+          <form class="card-body cardbody-color p-lg-5">
+
+            <div class="mb-3 mt-5">
+              <input type="text" class="form-control" name="userName" id="userName" [(ngModel)]="loginObj.userName" aria-describedby="emailHelp"
+                placeholder="User Name">
+            </div>
+            <div class="mb-3">
+              <input type="password" class="form-control" name="password" [(ngModel)]="loginObj.password" id="password" placeholder="password">
+            </div>
+            <div class="text-center"><button (click)="onLogin()" type="submit" class="btn btn-color px-5 mb-5 w-100">Login</button></div>
+                <div class="text-center"><button  type="submit" class="btn btn-color px-5 mb-5 w-100">Signup</button></div>
+            <div id="emailHelp" class="form-text text-center mb-5 text-dark">Not
+              Registered? <a href="#" class="text-dark fw-bold"> Create an
+                Account</a>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>

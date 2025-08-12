@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SlickCarosuelComponent } from './slick-carosuel.component';
+import { SignupComponent } from './signup.component';
 
-describe('SlickCarosuelComponent', () => {
-  let component: SlickCarosuelComponent;
-  let fixture: ComponentFixture<SlickCarosuelComponent>;
+describe('SignupComponent', () => {
+  let component: SignupComponent;
+  let fixture: ComponentFixture<SignupComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [SlickCarosuelComponent]
+      imports: [SignupComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(SlickCarosuelComponent);
+    fixture = TestBed.createComponent(SignupComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
