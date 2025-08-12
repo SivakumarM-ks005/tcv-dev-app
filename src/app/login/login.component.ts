@@ -21,13 +21,12 @@ loginObj={
 onNgInit():void {
   const localData = localStorage.getItem('signupUsers');
   if( localData != null){
-    this.signupUsers = JSON.parse(localData);
-     console.log("get the local", this.signupUsers);
+    this.signupUsers = JSON.parse(localData);    
   }
 }
   onLogin(){
    
-    const isUserExist = this.signupUsers.find( m => m.userName == this.loginObj.userName && m.password == this.loginObj.password);
+    const isUserExist = this.signupUsers.find( m => m.userName === this.loginObj.userName && m.password === this.loginObj.password);
      console.log( isUserExist);
     if(isUserExist != undefined){
       console.log( isUserExist);
